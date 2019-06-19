@@ -285,6 +285,16 @@ abstract class ExecutableTest
     }
 
     /**
+     * Get process stdout incremental content.
+     *
+     * @return string
+     */
+    public function getIncrementalOutput(): string
+    {
+        return $this->process->getIncrementalOutput();
+    }
+
+    /**
      * Get process stdout content.
      *
      * @return string
